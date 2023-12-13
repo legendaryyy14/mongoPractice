@@ -1,4 +1,3 @@
-
 const { MongoClient, ServerApiVersion } = require('mongodb');
 const uri = "mongodb+srv://jamiecardona:GkmpJhOfxO4oaFfs@cluster0.3qunk3z.mongodb.net/?retryWrites=true&w=majority";
 
@@ -10,6 +9,14 @@ const client = new MongoClient(uri, {
     deprecationErrors: true,
   }
 });
+
+// mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
+//   .then(() => {
+//     console.log('Connected to MongoDB');
+//   })
+//   .catch((error) => {
+//     console.error('Error connecting to MongoDB:', error.message);
+//   });
 
 async function run() {
   try {
